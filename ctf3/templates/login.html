@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="center">
+    <form method="POST">
+        <label for="uname">User name:</label>
+        <input type="text" id="uname" name="usrname" placeholder="Your Username.."><br><br>
+
+        <label for="lname">Password:</label>
+        <input type="password" id="pword" name="passwd" placeholder="Your Password.."><br><br>
+        <label>
+        <input type="checkbox" value="remember-me"> Remember me
+        </label>
+        <input type="submit" value="Submit">
+    </form>
+
+</div>
+
+</body>
+</html>

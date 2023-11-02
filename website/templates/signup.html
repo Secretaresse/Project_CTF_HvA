@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Sign Up</h1>
+        {% if g.msg %}
+        {{ g.msg }}
+        {% endif %}
+        <form action="#" method="post">
+            <input type="text" name="username" placeholder="Username">
+            <input type="password" name="password" placeholder="Password">
+            <input type="password" name="ReEnterdPassword" placeholder="Re-Enterd-Password">
+            <button type="submit" value="submit">Sign Up</button>
+        </form>
+        <div class="terms">
+          <input type="checkbox" id="checkbox">
+            <label for="checkbox">I agree to these terms & conditions</label>
+        </div>
+        <div class="member">Already a member? <a href="{{url_for('login.login')}}">Login Here</div>
+    </div>
+</body>
+</html>

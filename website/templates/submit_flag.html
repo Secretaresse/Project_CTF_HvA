@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Panda CTF</title>
+    <nav>
+        <ul>
+            <li><a href="{{url_for('home.home')}}">Home</a></li>
+            <li><a href="{{url_for('login.login')}}">Logout</a></li>
+            <li><a href="{{url_for('leaderbord.leaderbord')}}">Leaderboard</a></li>
+        </ul>
+    </nav>
+</head>
+<body>
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+    <div class="wrapper">
+        <h1>Submit Flag</h1>
+        {% if g.msg %}
+        {{ g.msg }}
+        {% endif %}
+        <form action="#" method="post">
+            <input type="text" name="flag" placeholder="flag">   
+            <button type="submit" value="submit">Submit Flag</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+body { 
+    background: url("img.jpeg");
+    background-size: 100%; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+#container {
+background-color: white;
+width: 900px;
+height: 500px;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+
+#header {
+   background-color: rgb(9, 1, 15);
+   color: whitesmoke;
+   text-align: center;
+
+}
+
+#content {
+    padding: 20px;
+}
+
+#nav {
+  /*Here you can find the style code for the nav of the html webpage. Hurray! You found the second part of the flag: oxeqc_*/ 
+    width: 300px;
+    height: 200px;
+    float: left;
+    font-size: larger;
+    font-weight: bold;
+    
+}
+
+#nav .loginform {
+    font-weight: bold;
+    color: rgb(170, 184, 174);
+}
+
+#main {
+    width: 600px;
+    float: right;
+}
+
+#footer { 
+    text-align: right;
+   
+   
+}
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    background-color: #333333;
+  }
+/* Here you can find the style sheet for the html web page. Congrats! You found the last and final part of the flag: panda) Well done! */ 
+  li {
+    float: left;
+  }
+  
+  li a {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  .navbar:hover{
+    background-color: gray;
+    
+   
+
+  }
+
+  .navbar{
+
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+    background-color: lightgray;
+  }
+
+
+
+  

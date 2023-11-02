@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <title>KEUZE</title>
+
+  <nav>
+    <ul>
+      <li><a href="{{url_for('login.login')}}">Logout</a></li>
+      <li><a href="{{url_for('leaderbord.leaderbord')}}">Leaderboard</a></li>
+      <li><a href="{{url_for('pandactf.submitflag')}}">Submit Flag</a></li>
+    </ul>
+  </nav>
+
+</head>
+
+<body>
+  <div id="main">
+    <a href="{{url_for('pandactf.ctf1')}}">
+      <div id="ctf1" style="background-color:#1e1f22">Panda CTF <br>
+        easy
+      </div>
+    </a>
+
+    <a href="{{url_for('cookiesctf.ctf2')}}">
+      <div id="ctf2" style="background-color:#1e1f22">Cookie CTF <br>
+        medium
+      </div>
+    </a>
+
+    <a href="{{url_for('adminctf.ctf3')}}">
+      <div id="ctf3" style="background-color:#1e1f22">Admin CTF <br>
+        hard
+      </div>
+    </a>
+  </div>
+</body>
+
+</html>
