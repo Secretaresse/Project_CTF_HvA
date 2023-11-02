@@ -1,0 +1,39 @@
+version: '3.9'
+services:
+  website:
+      image: home
+      ports: 
+      - 3000:3000
+      depends_on:
+        - mysql
+
+  mysql:
+    image: userdb
+  
+    environment:
+      - MYSQL_DATABASE=ditodb
+      - MYSQL_USER=jelle
+      - MYSQL_PASSWORD=ditodb
+      - MYSQL_ROOT_PASSWORD=root
+    
+    ports:
+      - 3306:3306
+    restart: always  
+
+  ctf1:
+    image: panda
+    ports: 
+      - 3100:3100
+
+  ctf2:
+    image: cookies
+    ports: 
+      - 3200:3200
+
+  ctf3:
+      image: login
+      ports: 
+        - 3300:3300
+  
+    
+    
